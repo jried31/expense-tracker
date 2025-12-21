@@ -53,7 +53,7 @@ class TestExpenseStorage:
 
         with pytest.raises(ValueError, match="Amount must be greater than zero"):
             Expense(
-                        amount=-50.99,
+                        amount=-50.1,
                         category="Food",
                         description="Lunch",
                         expense_id="exp_20251221_120000_abc123"
